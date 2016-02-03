@@ -1,0 +1,17 @@
+<head>
+  <title>{% if page.title %}{{ page.title | escape }} – {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+	<meta name="google-site-verification" content="62aHHYtpLUO4xK86QMpim0mQOeVtRXW4IiK5fkzWMsw">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+	<link href="//fonts.googleapis.com/css?family=Josefin+Sans:400,300,700" rel="stylesheet"
+	type="text/css">
+	<link href="{{ "/css/main.css" | prepend: site.baseurl }}" rel="stylesheet" type="text/css">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="icon" type="image/png" sizes="192x192" href="/images/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+</head>
