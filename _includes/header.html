@@ -8,7 +8,7 @@
         <div class="typed"></div>
       </div>
       <nav class="nav">
-        <ul>
+        <ul class="editable">
           {% for page in site.pages %}
             {% unless page.exclude %}
               <li><a href="{{ page.url }}">{{ page.title}}</a></li>
