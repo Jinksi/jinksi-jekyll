@@ -8,15 +8,15 @@
         <div class="typed"></div>
       </div>
       <nav class="nav">
--        <ul>
--          {% for page in site.pages %}
--            {% unless page.exclude %}
--              <li><a href="{{ page.url }}">{{ page.title}}</a></li>
--            {% endunless %}
--          {% endfor %}
--        </ul>
- -    </nav>
-       <ul class="social">
+        <ul>
+            {% for page in site.pages %}
+                {% unless page.exclude %}
+                    <li><a href="{{ page.url }}">{{ page.title}}</a></li>
+                {% endunless %}
+         {% endfor %}
+        </ul>
+      </nav>
+      <ul class="social">
         <li>
           <a href="http://twitter.com/jinksi" title="twitter.com/jinksi" class="tooltip"><i class="icon ion-social-twitter"></i></a><a href="http://github.com/jinksi"
           title="github.com/jinksi" class="tooltip"><i class="icon ion-social-github"></i></a>
